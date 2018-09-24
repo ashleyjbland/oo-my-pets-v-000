@@ -77,10 +77,9 @@ class Owner
   def sell_pets
     #delete the values of the dogs, fishes, cats keys
     #change all of their moods to "nervous"
-    
+
     @pets.each do |species, pet|
       spsecies[pet] = []
-      end
     end
   end
 
