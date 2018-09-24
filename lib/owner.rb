@@ -51,6 +51,7 @@ class Owner
       if species == :dogs
         pet.each do |pet|
           Dog.mood = "happy"
+        end
       end
     end
   end
