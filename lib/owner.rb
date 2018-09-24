@@ -47,9 +47,10 @@ class Owner
   def walk_dogs
     #change dogs mood from nervous to happy
     #i can access this information in @pets[:dogs]
-    @pets.each do |species|
+    @pets.each do |species, pet|
       if species == :dogs
-        Dog.mood.replace("happy")
+        pet.each do |pet|
+          Dog.mood = "happy"
       end
     end
   end
