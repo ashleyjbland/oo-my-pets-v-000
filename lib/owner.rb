@@ -47,7 +47,9 @@ class Owner
   def walk_dogs
     #change dogs mood from nervous to happy
     #i can access this information in @pets[:dogs]
-    @pets[:dogs][@mood] = "happy"
+    @pets.each do |species|
+      if species == :dogs
+        Dog.mood="happy"
 
   end
 
