@@ -79,7 +79,7 @@ class Owner
     #change all of their moods to "nervous"
 
     @pets.each do |species, pet|
-      species[pet] = []
+      species[pet].clear
     end
   end
 
