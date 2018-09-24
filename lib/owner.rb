@@ -46,12 +46,8 @@ class Owner
 
   def walk_dogs
     @pets.collect do |species, pet|
-      if pet == :dogs
-        pet.collect do |name, mood|
-          if mood == "nervous"
-            "nervous".replace("happy")
-          end
-        end
+      if pet == :dogs && mood == "nervous"
+        "nervous".replace("happy")
       end
     end
   end
