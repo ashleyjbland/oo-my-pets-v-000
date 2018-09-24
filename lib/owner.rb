@@ -49,7 +49,7 @@ class Owner
     #i can access this information in @pets[:dogs]
     @pets.each do |species|
       if species == :dogs
-        Dog.mood="happy"
+        Dog.mood.replace("happy")
       end
     end
   end
