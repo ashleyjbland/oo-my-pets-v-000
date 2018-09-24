@@ -48,7 +48,9 @@ class Owner
     @pets.collect do |species, pet|
       if pet == :dogs
         pet.collect do |name, mood|
-          mood.replace("happy")
+          if mood == "nervous"
+            "nervous".replace("happy")
+          end
         end
       end
     end
