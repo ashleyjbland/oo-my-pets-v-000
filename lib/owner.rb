@@ -50,7 +50,8 @@ class Owner
     @pets.each do |species|
       if species == :dogs
         Dog.mood="happy"
-
+      end
+    end
   end
 
 
