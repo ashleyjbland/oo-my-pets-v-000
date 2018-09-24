@@ -47,7 +47,7 @@ class Owner
   def walk_dogs
     #change dogs mood from nervous to happy
     #i can access this information in @pets[:dogs]
-    @pets[:dogs].mood="happy"
+    Dog.mood="happy"
 
   end
 
