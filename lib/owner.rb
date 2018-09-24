@@ -75,8 +75,6 @@ class Owner
   end
 
   def sell_pets
-    #delete the values of the dogs, fishes, cats keys
-    #change all of their moods to "nervous"
     @pets.each do |species, pet|
       pet.each do |pet|
         pet.mood = "nervous"
